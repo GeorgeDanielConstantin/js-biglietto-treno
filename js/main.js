@@ -15,7 +15,7 @@ if (!isNaN(età) && !isNaN(km)){
         const scontoMinorenneEuro = price * 0.2;
         const pricef = price - scontoMinorenneEuro;
 
-        console.log(`Prezzo under 18 ${pricef}`);
+        console.log(`Prezzo under 18 ${pricef.toFixed(2)}`);
     }
     // ANZIANO
 
@@ -24,11 +24,11 @@ if (!isNaN(età) && !isNaN(km)){
         const scontoAnzianoEuro = price * 0.4;
         const pricef = price - scontoAnzianoEuro;
 
-        console.log(`Prezzo over 65 ${pricef}`);
+        console.log(`Prezzo over 65 ${pricef.toFixed(2)}`);
     }
 
     if (età >= 18 && età < 65 ) {
-        console.log(`Prezzo ${price}`);
+        console.log(`Prezzo ${price.toFixed(2)}`);
     }
 } else {
     console.log('Valori invalidi');
